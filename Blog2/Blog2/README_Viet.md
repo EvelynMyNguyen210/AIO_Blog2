@@ -376,6 +376,39 @@ response = local_chatbot()
 
 ***Full source code tại: [Google Colab](https://colab.research.google.com/drive/1vpn7lnZbX3niohOM_7jMayMYqrmBVlIT?usp=sharing)***
 
+# 5. Kết luận: Tạo chatbot là bài toán tư duy trước khi là bài toán code
+
+Qua bài viết này, có thể rút ra một điểm quan trọng:
+
+***Xây dựng chatbot AI không bắt đầu từ code, mà bắt đầu từ tư duy thiết kế.***
+
+Trước khi viết bất kỳ dòng code nào, bạn cần trả lời rõ ràng những câu hỏi nền tảng:
+
+- Chatbot được tạo ra để giải quyết vấn đề gì?
+
+- Ai là người sử dụng chính?
+
+- Phạm vi câu hỏi và trả lời đến đâu?
+
+- Có cần sử dụng dữ liệu riêng hay không?
+
+Khi những câu hỏi này chưa được làm rõ, việc bắt tay vào code quá sớm thường dẫn đến:
+
+- Hệ thống phức tạp nhưng hiệu quả thấp
+
+- Chatbot trả lời lan man, khó kiểm soát chất lượng
+
+- Tốn chi phí triển khai nhưng không giải quyết đúng nhu cầu thực tế
+
+Ngược lại, khi tư duy đã rõ ràng:
+
+- Việc lựa chọn công nghệ trở nên đơn giản và có mục đích
+
+- Code chỉ còn là bước hiện thực hóa ý tưởng
+
+- Hệ thống dễ mở rộng, dễ tối ưu và dễ bảo trì về lâu dài
+
+*Trong bài blog tiếp theo, chúng ta sẽ đi từ demo đơn giản này để xây dựng một chatbot hoàn chỉnh hơn, sau đó deploy lên các nền tảng miễn phí để chạy như một sản phẩm demo thực sự.*
 # Trích dẫn
 Anthropic. (2025). Introducing Claude 4. https://www.anthropic.com/news/claude-4
 AWS. (n.d.). What is Retrieval-Augmented Generation (RAG)? Amazon Web Services. https://aws.amazon.com/what-is/retrieval-augmented-generation
