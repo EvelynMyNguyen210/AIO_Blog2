@@ -34,6 +34,78 @@ Thành phần trung tâm điều phối toàn bộ luồng dữ liệu. Lớp n�
 
 Trong nhiều ứng dụng thực tế, mô hình ngôn ngữ cần được cung cấp thông tin chuyên biệt, cập nhật hoặc nội bộ (tài liệu kỹ thuật, cơ sở dữ liệu doanh nghiệp, tài liệu học thuật…). Kỹ thuật Retrieval-Augmented Generation (RAG) thường được sử dụng để truy xuất và tích hợp thông tin liên quan vào prompt, giúp giảm thiểu hiện tượng “hallucination” và tăng độ chính xác.
 
+# 2. Roadmap: 3 cấp độ xây dựng chatbot
+
+## Level 1: Rule-based chatbot 
+Chatbot rule-based hoạt động dựa trên các quy tắc được lập trình sẵn. Khi người dung đặt câu hỏi, chatbot sẽ xử lí và so sánh câu hỏi với các điều kiện có sẵn để đưa ra câu trả lời chính xác.
+
+Các lĩnh vực ứng dụng của rule-based chatbot:
+-	Chăm sóc khách hàng: trả lời câu hỏi FAQs, báo cáo thông tin đặt hàng, đưa ra các gợi ý xử lí vấn đề đơn giản.
+-	Y tế: hỗ trợ đặt lịch khám, cung cấp thông tin y tế, thông tin khám bệnh, hồ sơ bệnh nhân.
+-	Ngân hàng: trả lời các câu hỏi cơ bản về giao dịch, các dịch vụ của ngân hàng.
+
+Ưu điểm: 
+-	Dễ thiết lập và sử dụng nhờ sử dụng lập trình quy tắc, có thể triển khai nhanh chóng mà không cần đầu tư huấn luyện AI.
+-	Hiệu quả trong việc xử lí các tác vụ mang tính lặp lại, trả lời nhanh các câu hỏi thường gặp, tiết kiệm nhân lực cho các tác vụ này.
+-	Có thể đưa ra phản hồi chính xác do được lập trình sẵn theo khuôn mẫu.
+-	Chi phí phát triển và vận hành thấp.
+
+Nhược điểm:
+-	Không trả lời được các câu hỏi ngoài phạm vi được lập trình trước.
+-	Không thể tự học, khó phát triển vì mỗi khi doanh nghiệp muốn them tính năng mới, phải cập nhật chatbot.
+-	Không thể xử lí đoạn hội thoại phức tạp, giảm trải nghiệm khách hàng.
+
+Công cụ phát triển:
+-	Vì dựa trên lập trình quy tắc, có thể lập trình rule-based chatbot bằng các ngôn ngữ lập trình như Python. Các điều kiện được triển khai theo cấu trúc if-else, pattern matching.
+
+## Level 2: Machine Learning-based chatbot
+Machine Learning chatbot ứng dụng các thuật toán machine learning và NLP trong quá trình xây dựng chatbot. Khác với rule-based chatbot, ML-based chatbot đưa ra phản hồi thông minh và linh hoạt hơn nhờ vào quá trình đào tạo bằng AI thay vì lập trình quy tắc. 
+
+Ứng dụng của ML-based chatbot:
+-	Giống với rule-based chatbot, ML-based chatbot được ứng dụng rộng rãi trong lĩnh vực chăm sóc khách hàng, y tế, dịch vụ. Tuy nhiên, với việc ứng dụng machine learning, chất lượng phản hồi của chatbot được nâng cấp hơn. 
+-	Trong lĩnh vực chăm sóc khách hang, dịch vụ, ngoài cung cấp thông tin, chatbot còn có thể gợi ý them thông tin dựa trên cuộc hội thoại trước đó.
+-	Trong y tế, ngoài trả lời câu hỏi về lịch hẹn, thông tin sức khỏe, ML-based chatbot còn có thể theo dõi và báo cáo bác sĩ về tình trạng bệnh nhân để hỗ trợ kịp thời.
+
+Ưu điểm:
+-	Chatbot phản hồi linh hoạt hơn do có thể hiểu ngữ cảnh của người dung, cung cấp nhiều thông tin hơn, nâng cao trải nghiệm người dung.
+-	Chatbot có khả năng tự học từ dữ liệu và thông qua tương tác khách hang, từ đó hệ thống luôn được cập nhật tự động.
+
+Nhược điểm:
+-	Chi phí đào tạo và vận hành lớn. Việc ứng dụng AI đòi hỏi bộ dữ liệu lớn và chất lượng tùy lĩnh vực để đào tạo chatbot.
+-	Thời gian đào tạo và triển khai chatbot cũng lâu hơn rule-based chatbot.
+
+Công cụ phát triển:
+Hiện nay có rất nhiều công cụ, thư viện để xây dựng AI chatbot, có thể kể đến như:
+o	Tensorflow, Pytorch: Hai thư viện và framework nổi tiếng về deep learning để đào tạo ML-based chatbot. Gồm các thuật toán, thư viện để hỗ trợ quá trình xây dựng và đào tạo chatbot.
+o	spaCy: Thư viện NLP để xử lí ngôn ngữ tự nhiên.
+o	Hugging Face Transformers: Nền tảng lưu trữ các pre-trained models lớn như GPT, BERT.
+o	Rasa: Framework mã nguồn mở lớn cho chatbot, bao gồm các kĩ thuật như NLU, intent classification, entity extraction.
+
+## Level 3: LLM-based Chatbot
+
+LLM-based chatbot có thể xem là một trợ lí ảo được vận hành bởi Large Language Model, được đào tạo trên bộ dữ liệu khổng lồ. LLM-based chatbot có khả năng hiểu ngôn ngữ, tạo phản hồi tự nhiên và tương tác giống người.
+
+Ứng dụng của LLM-based chatbot:
+-	Với LLM, chatbot có thể được ứng dụng như một trợ lí ảo cho nhiều lĩnh vực khác nhau. Có thể đóng vai trò như một trợ lí giải đáp thắc mắc về dịch vụ cho cơ sở y tế, dịch vụ.
+-	Hỗ trợ giải đáp về chính sách, văn bản, tóm tắt và dịch tài liệu.
+-	Hỗ trợ giải quyết vấn đề kĩ thuật theo hướng dẫn cụ thể.
+-	Tạo nội dung dựa trên yêu cầu.
+
+Ưu điểm:
+-	Hiểu tường tận ngôn ngữ con người, có thể trả lời các câu hỏi phức tạp, đưa gợi ý và hướng dẫn, không rập khuôn, đa ngành nghề.
+-	Xử lí được các yêu cầu phức tạp, tổng quát, có khả năng sáng tạo nội dung.
+-	Tự động hóa các công việc như báo cáo, tổng hợp thông tin, giúp tiết kiệm thời gian và tang năng suất.
+
+Nhược điểm:
+-	Cần tài nguyên tính toán lớn. Việc huấn luyện và vận hành LLM yêu cầu phần cứng, cơ sở vật chất mạnh mẽ, tốn kém.
+-	Vì được đào tạo trên mô hình ngôn ngữ lớn, không tránh khỏi các trường hợp huấn luyện sai về kiến thức, từ đó nội dung được tạo ra có thể sai.
+
+Công cụ phát triển:
+-	LangChain: framework mã nguồn mở hỗ trợ xây dựng chatbot dựa trên mô hình ngôn ngữ lớn.
+-	Llama: mô hình ngôn ngữ lớn mã nguồn mở của Meta.
+-	OpenAI API: mô hình AI của OpenAI, cho phép ứng dụng truy cập vào mô hình để tạo chatbot.
+-	Hugging Face Transformers: Nền tảng lưu trữ các pre-trained models lớn.
+
 # 3. Bạn muốn tạo chatbot để làm gì?
 # 3.1 Xác định mục tiêu của chatbot
 Trên thực tế, phần lớn AI chatbot hiện nay có thể được xếp vào một trong bốn nhóm chính.
