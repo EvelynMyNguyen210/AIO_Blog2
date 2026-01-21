@@ -183,9 +183,14 @@ Mặc dù các mô hình ngôn ngữ lớn đã được huấn luyện trên l�
 
 # 2. Roadmap: 3 cấp độ xây dựng chatbot
 
-## Level 1: Rule-based Chatbot (30 phút - 1 giờ)
+## Level 1: Rule-based Chatbot
 
 Chatbot rule-based hoạt động dựa trên các quy tắc được lập trình sẵn. Khi người dung đặt câu hỏi, chatbot sẽ xử lí và so sánh câu hỏi với các điều kiện có sẵn để đưa ra câu trả lời chính xác.
+
+<p align="center">
+  <img src="images\rulebased-chatbot_part2.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Hình 2.1. Rule-based Chatbot</em>
+</p>
 
 Các lĩnh vực ứng dụng của rule-based chatbot:
 -	Chăm sóc khách hàng: Trả lời câu hỏi FAQs, báo cáo thông tin đặt hàng, đưa ra các gợi ý xử lí vấn đề đơn giản.
@@ -211,6 +216,11 @@ Công cụ phát triển:
 
 Machine Learning chatbot ứng dụng các thuật toán machine learning và NLP trong quá trình xây dựng chatbot. Khác với rule-based chatbot, ML-based chatbot đưa ra phản hồi thông minh và linh hoạt hơn nhờ vào quá trình đào tạo bằng AI thay vì lập trình quy tắc. 
 
+<p align="center">
+  <img src="images\ai-chatbot_part2.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Hình 2.2. Machine Learning-based Chatbot</em>
+</p>
+
 Ứng dụng của ML-based chatbot:
 -	Giống với rule-based chatbot, ML-based chatbot được ứng dụng rộng rãi trong lĩnh vực chăm sóc khách hàng, y tế, dịch vụ. Tuy nhiên, với việc ứng dụng machine learning, chất lượng phản hồi của chatbot được nâng cấp hơn. 
 -	Trong lĩnh vực chăm sóc khách hàng, dịch vụ, ngoài cung cấp thông tin, chatbot còn có thể gợi ý them thông tin dựa trên cuộc hội thoại trước đó.
@@ -234,6 +244,11 @@ Hiện nay có rất nhiều công cụ, thư viện để xây dựng AI chatbo
 ## Level 3: LLM-based Chatbot
 
 LLM-based chatbot có thể xem là một trợ lí ảo được vận hành bởi Large Language Model, được đào tạo trên bộ dữ liệu khổng lồ. LLM-based chatbot có khả năng hiểu ngôn ngữ, tạo phản hồi tự nhiên và tương tác giống người.
+
+<p align="center">
+  <img src="images\LLM_chatbot_part2.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Hình 2.3. LLM-based chatbot</em>
+</p>
 
 Ứng dụng của LLM-based chatbot:
 -	Với LLM, chatbot có thể được ứng dụng như một trợ lí ảo cho nhiều lĩnh vực khác nhau. Có thể đóng vai trò như một trợ lí giải đáp thắc mắc về dịch vụ cho cơ sở y tế, dịch vụ.
