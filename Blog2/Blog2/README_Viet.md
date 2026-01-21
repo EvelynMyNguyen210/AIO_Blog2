@@ -190,7 +190,7 @@ Chatbot rule-based hoạt động dựa trên các quy tắc được lập trì
 Các lĩnh vực ứng dụng của rule-based chatbot:
 -	Chăm sóc khách hàng: Trả lời câu hỏi FAQs, báo cáo thông tin đặt hàng, đưa ra các gợi ý xử lí vấn đề đơn giản.
 -	Y tế: Hỗ trợ đặt lịch khám, cung cấp thông tin y tế, thông tin khám bệnh, hồ sơ bệnh nhân.
--	Ngân hang: Trả lời các câu hỏi cơ bản về giao dịch, các dịch vụ của ngân hàng.
+-	Ngân hàng: Trả lời các câu hỏi cơ bản về giao dịch, các dịch vụ của ngân hàng.
 
 Ưu điểm: 
 -	Dễ thiết lập và sử dụng nhờ sử dụng lập trình quy tắc, có thể triển khai nhanh chóng mà không cần đầu tư huấn luyện AI.
@@ -226,10 +226,10 @@ Nhược điểm:
 
 Công cụ phát triển:
 Hiện nay có rất nhiều công cụ, thư viện để xây dựng AI chatbot, có thể kể đến như:
-o	Tensorflow, Pytorch: Hai thư viện và framework nổi tiếng về deep learning để đào tạo ML-based chatbot. Gồm các thuật toán, thư viện để hỗ trợ quá trình xây dựng và đào tạo chatbot.
-o	spaCy: Thư viện NLP để xử lí ngôn ngữ tự nhiên.
-o	Hugging Face Transformers: Nền tảng lưu trữ các pre-trained models lớn như GPT, BERT.
-o	Rasa: Framework mã nguồn mở lớn cho chatbot, bao gồm các kĩ thuật như NLU, intent classification, entity extraction.
+- Tensorflow, Pytorch: Hai thư viện và framework nổi tiếng về deep learning để đào tạo ML-based chatbot. Gồm các thuật toán, thư viện để hỗ trợ quá trình xây dựng và đào tạo chatbot.
+- spaCy: Thư viện NLP để xử lí ngôn ngữ tự nhiên.
+- Hugging Face Transformers: Nền tảng lưu trữ các pre-trained models lớn như GPT, BERT.
+- Rasa: Framework mã nguồn mở lớn cho chatbot, bao gồm các kĩ thuật như NLU, intent classification, entity extraction.
 
 ## Level 3: LLM-based Chatbot
 
