@@ -82,6 +82,44 @@ Chatbot được thiết kế cho một lĩnh vực nhất định như:
 
 **Những câu hỏi bắt buộc phải trả lời trước khi code**
 
+Sau khi xác định loại chatbot, bạn cần trả lời rõ các câu hỏi sau:
+- Chatbot này dùng cho ai?
+- Nó sẽ trả lời loại câu hỏi nào?
+- Có cần nhớ lịch sử hội thoại hay chỉ trả lời từng câu riêng lẻ?
+- Có cần dùng dữ liệu riêng không, hay chỉ kiến thức chung?
+
+ Nếu chưa trả lời rõ những câu hỏi này, việc code sẽ rất dễ **“loạn hướng”** khiến tính năng thêm khó sửa, khó mở rộng.
+
+# 3.2 Những sai lầm thường gặp khi bắt đầu tạo chatbot
+
+Khi mới làm chatbot, rất nhiều người gặp những sai lầm giống nhau:
+
+**Kỳ vọng chatbot “hiểu” như con người**
+
+Chatbot không có nhận thức hay cảm xúc. Nó chỉ xử lý ngôn ngữ và dự đoán câu trả lời dựa trên dữ liệu đã học. Kỳ vọng chatbot suy nghĩ như con người sẽ dẫn đến thất vọng.
+
+**Tin chatbot 100%**
+
+AI chatbot có thể trả lời sai nhưng nghe rất thuyết phục. Nếu không có cơ chế kiểm soát, chatbot có thể tạo ra thông tin sai lệch mà người dùng khó nhận ra.
+
+**Không giới hạn phạm vi**
+
+Muốn chatbot “trả lời được mọi thứ” là một sai lầm phổ biến. Chatbot càng tập trung vào một phạm vi hẹp thì càng hiệu quả và dễ kiểm soát.
+
+**Bỏ qua chi phí và bảo mật**
+
+API AI thường tính phí theo mức sử dụng. Ngoài ra, việc để lộ API key hoặc dữ liệu nhạy cảm có thể gây rủi ro nghiêm trọng.
+
+# 3.3 Khi nào nên bắt đầu làm demo?
+
+Demo **không nên** là bước đầu tiên, mà là bước dùng để kiểm chứng xem ý tưởng của bạn có thực sự hiệu quả hay không.
+
+Sau khi đã xác định rõ chatbot dùng để làm gì và phục vụ cho ai, lúc này bạn mới nên nghĩ đến việc làm một bản demo nhỏ. Demo nên được bắt đầu khi mục tiêu chatbot đã rõ ràng và phạm vi sử dụng đã được thu hẹp. Đây là thời điểm bạn cần kiểm tra một câu hỏi rất đơn giản nhưng quan trọng: *chatbot này có giải quyết đúng vấn đề mình đặt ra hay không?*
+
+Một bản demo tốt không cần phải đầy đủ mọi tính năng, cũng không cần giao diện đẹp hay trải nghiệm hoàn hảo. Thay vào đó, demo chỉ cần tập trung vào phần cốt lõi nhất của chatbot. Nếu chatbot được tạo ra để trả lời câu hỏi, hãy kiểm tra xem nó có trả lời đúng và ổn định hay không. Nếu chatbot được thiết kế để hỗ trợ một tác vụ, hãy xem liệu nó có hoàn thành được tác vụ đó một cách trơn tru.
+
+Mục tiêu của demo không phải là tạo ra sản phẩm hoàn chỉnh, mà là giúp bạn phát hiện sớm các vấn đề về ý tưởng, phạm vi hoặc cách tiếp cận. Một demo đơn giản nhưng đúng trọng tâm sẽ giúp bạn tiết kiệm rất nhiều thời gian và công sức khi bước sang giai đoạn phát triển chatbot đầy đủ hơn.
+
 # 4. Xây dựng chatbot
 
 Sau khi đã hiểu cách hoạt động và các thành phần của một AI chatbot, chúng ta sẽ làm một demo AI chatbot đơn giản chạy trực tiếp trên Google Colab:
