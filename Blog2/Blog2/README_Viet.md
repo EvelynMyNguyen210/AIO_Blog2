@@ -82,5 +82,113 @@ Chatbot được thiết kế cho một lĩnh vực nhất định như:
 
 **Những câu hỏi bắt buộc phải trả lời trước khi code**
 
+# 4. Xây dựng chatbot
 
+Sau khi đã hiểu cách hoạt động và các thành phần của một AI chatbot, chúng ta sẽ làm một demo AI chatbot đơn giản chạy trực tiếp trên Google Colab:
+
+Khác với cách tiếp cận phổ biến là gọi API từ các dịch vụ bên ngoài, trong blog này chatbot sẽ tải và chạy trực tiếp model AI trên môi trường Google Colab. Cách làm này giúp chúng ta hiểu rõ hơn cách mô hình hoạt động nội bộ, đồng thời phù hợp cho việc nghiên cứu, thử nghiệm và học tập mà không phụ thuộc vào API từ bên thứ ba.
+
+## 4.1. Cài đặt thư viện cần thiết
+
+Trước tiên, chúng ta cần cài đặt một số thư viện quan trọng để phục vụ cho việc tải và chạy mô hình ngôn ngữ trực tiếp trên Google Colab:
+
+ - transformers: thư viện của Hugging Face, dùng để tải các mô hình ngôn ngữ lớn.
+
+ - torch: framework nền tảng của deep learning, giúp thực hiện các phép tính tensor và huấn luyện mô hình.
+
+ - accelerate: hỗ trợ tối ưu quá trình chạy mô hình, cấu hình CPU và GPU, phân bổ tài nguyên và tăng tốc suy luận mà không cần cấu hình phức tạp.
+
+ - bitsandbytes: cho phép nạp mô hình ở dạng nén (8-bit hoặc 4-bit), giúp giảm đáng kể mức sử dụng với tài nguyên hạn chế.
+
+```
+!pip install -q -U torch transformers accelerate bitsandbytes
+```
+
+## 4.2. Tải mô hình ngôn ngữ
+Trong demo này, chúng ta sử dụng model:
+
+***Qwen2.5-1.5B-Instruct***
+
+Đây là một mô hình:
+
+- Nhẹ (~1.5B parameters)
+
+- Được fine-tune cho hội thoại
+
+- Phù hợp cho demo và chạy thử
+
+Bạn cũng có tìm và thay mô hình phù hợp tại ***[Hugging Face](https://huggingface.co/)***
+
+```
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+
+
+model_name = "Qwen/Qwen2.5-1.5B-Instruct"
+
+#Nếu sử dụng GPU thì đặt thành True
+use_gpu = False
+
+print("⏳ Đang tải model ...")
+if use_gpu==True:
+    nf4_config = BitsAndBytesConfig(
+                                    load_in_4bit=True,
+                                    bnb_4bit_use_double_quant=True,
+                                    bnb_4bit_quant_type="nf4",
+                                    bnb_4bit_compute_dtype=torch.bfloat16,
+                                    )
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        quantization_config=nf4_config,
+        low_cpu_mem_usage =True
+    )
+else:
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        low_cpu_mem_usage =True
+    )
+tokenizer = AutoTokenizer.from_pretrained(model_name, return_token_type_ids=False)
+print("⏳ Đã tải và load model ...")
+```
+## 4.3 Hàm sử dụng chatbot đơn giản
+
+Luồng xử lý của hàm này đúng với tư duy đã trình bày ở các phần trước:
+
+- Nhận input từ người dùng
+
+- Đóng gói input vào prompt
+
+- Gửi prompt cho mô hình
+
+- Nhận kết quả và in ra câu trả lời
+```
+def local_chatbot():
+    user_input = input("\n👤 User: ")
+    if user_input.lower() in ['bye', 'exit']: return
+    
+    promt = f"""<|im_start|>system
+              Bạn là một trợ lý AI hữu ích. Trả lời ngắn gọn, đúng trọng tâm.
+              <|im_end|>
+              <|im_start|>user
+              {user_input}
+              <|im_end|>
+              <|im_start|>assistant
+            """
+    # Tokenize
+    inputs = tokenizer(promt, return_tensors="pt")
+    
+    # Generate
+    outputs = model.generate(**inputs, max_new_tokens=200)
+    
+    # Decode
+    response = tokenizer.decode(outputs[0])
+    
+    # Đoạn này cần xử lý chuỗi một chút để in ra cho đẹp
+    print(f"🤖 Bot: {response.split("<|im_start|>assistant")[-1].strip().replace("<|im_end|>","")}")
+    return response
+
+response = local_chatbot()
+```
+
+***Full source code tại: [Google Colab](https://colab.research.google.com/drive/1vpn7lnZbX3niohOM_7jMayMYqrmBVlIT?usp=sharing)***
 
