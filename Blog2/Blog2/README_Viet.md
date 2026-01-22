@@ -1,6 +1,6 @@
-# 0. Việc phát triển AI chatbot ngày nay trở nên dễ tiếp cận hơn bao giờ hết
+# 1. Việc phát triển AI chatbot ngày nay trở nên dễ tiếp cận hơn bao giờ hết
 
-# 0.1. Sự thay đổi trong cách tiếp cận phát triển chatbot
+# 1.1. Sự thay đổi trong cách tiếp cận phát triển chatbot
 
 Khi nghĩ đến việc xây dựng một AI chatbot, nhiều người thường có ấn tượng rằng đây là một công việc phức tạp, đòi hỏi kiến thức chuyên sâu về trí tuệ nhân tạo và máy học. Tuy nhiên, trong những năm gần đây, bối cảnh phát triển chatbot đã thay đổi đáng kể (OpenAI, 2025; Rasiksuhail, 2026).
 
@@ -10,7 +10,7 @@ Sự thay đổi này đến từ hai yếu tố chính:
 
 **Thứ hai, sự phát triển của các công cụ và thư viện hỗ trợ.** Ngày nay, việc tích hợp AI vào ứng dụng đã trở nên đơn giản hơn nhiều nhờ các framework và thư viện được tối ưu hóa. Điều này cho phép các nhà phát triển tập trung vào logic nghiệp vụ thay vì phải lo lắng về các chi tiết kỹ thuật phức tạp của machine learning.
 
-## 0.2. Phân biệt giữa phát triển mô hình AI và xây dựng chatbot
+## 1.2. Phân biệt giữa phát triển mô hình AI và xây dựng chatbot
 Một điểm quan trọng cần làm rõ là sự khác biệt giữa phát triển mô hình AI từ đầu và xây dựng một ứng dụng chatbot (Hire A.I. Developers, 2025).
 
 **Phát triển mô hình AI đòi hỏi:**
@@ -42,7 +42,7 @@ Tương tự, khi xây dựng chatbot:
 - Công việc của nhà phát triển là thiết kế kiến trúc hệ thống
 - Kết nối các thành phần để tạo ra sản phẩm hoàn chỉnh
 
-# 1. Một AI chatbot tối thiểu gồm những thành phần nào
+# 2. Một AI chatbot tối thiểu gồm những thành phần nào
 
 Một hệ thống chatbot dựa trên AI không chỉ đơn thuần là một mô hình ngôn ngữ lớn, mà là một hệ thống tích hợp nhiều thành phần phối hợp chặt chẽ để tạo ra trải nghiệm hội thoại tự nhiên và hiệu quả (ScienceDirect, 2025). Dưới đây là bốn thành phần cốt lõi cần thiết trong một AI chatbot tối thiểu:
 
@@ -51,7 +51,7 @@ Một hệ thống chatbot dựa trên AI không chỉ đơn thuần là một m
   <em>Hình 1.1. Các thành phần chính của một hệ thống AI chatbot</em>
 </p>
 
-## 1.1. Giao diện người dùng: 
+## 2.1. Giao diện người dùng: 
 **Vai trò:** Tạo điểm tiếp xúc giữa người dùng và hệ thống chatbot
 
 Giao diện người dùng là lớp trực tiếp tương tác với người dùng cuối. Tuỳ thuộc vào platform và use case, giao diện có thể được triển khai dưới nhiều hình thức.
@@ -69,7 +69,7 @@ Giao diện người dùng là lớp trực tiếp tương tác với người d
 - Thu thập và chuẩn hóa input từ người dùng (văn bản, giọng nói)
 - Hiển thị response dưới định dạng phù hợp
 
-## 1.2. Lớp xử lý logic: 
+## 2.2. Lớp xử lý logic: 
 
 **Vai trò:** Trung tâm điều phối và xử lý luồng hội thoại
 Đây là thành phần mà nhà phát triển sẽ triển khai chủ yếu, đảm nhiệm việc điều phối toàn bộ quy trình từ khi nhận input đến khi trả về response.
@@ -103,7 +103,7 @@ Trước khi trả về cho người dùng, response cần được xử lý:
 - Kiểm tra độ dài phù hợp với platform
 - Lọc nội dung không phù hợp
 
-## 1.3. Mô hình AI hoặc dịch vụ truy cập: 
+## 2.3. Mô hình AI hoặc dịch vụ truy cập: 
 
 **Vai trò:** Xử lý ngôn ngữ tự nhiên và sinh câu trả lời
 
@@ -122,7 +122,7 @@ Trước khi trả về cho người dùng, response cần được xử lý:
 | **Hugging Face (Open-source hub)** | Llama series (Meta), Mistral/Mixtral (Mistral AI), Qwen, Gemma… | Miễn phí, mã nguồn mở, dễ tùy chỉnh và fine-tune, cộng đồng hỗ trợ lớn, có thể triển khai cục bộ hoặc offline, không phụ thuộc nhà cung cấp | Yêu cầu hạ tầng tính toán mạnh (GPU/server) để chạy hiệu quả, thiếu hỗ trợ chính thức và cập nhật tự động, hiệu năng có thể kém hơn so với các mô hình frontier closed ở một số nhiệm vụ phức tạp |
 
 <p align="center">
-  <em>Bảng 1.1 So sánh các nhà cung cấp mô hình ngôn ngữ lớn phổ biến (tháng 1/2026)</em>
+  <em>Bảng 2.1 So sánh các nhà cung cấp mô hình ngôn ngữ lớn phổ biến (tháng 1/2026)</em>
 </p>
 
 **Ghi chú**:
@@ -169,7 +169,7 @@ Quy trình tổng quát:
 - Thời gian phát triển và thử nghiệm kéo dài hơn nhiều so với phương pháp API
 - Phải tự chịu trách nhiệm bảo trì, cập nhật và tối ưu hóa mô hình liên tục
 
-## 1.4. Thành phần 4: Cơ sở tri thức - Tùy chọn
+## 2.4. Thành phần 4: Cơ sở tri thức - Tùy chọn
 **Vai trò:** Cung cấp thông tin domain-specific mà mô hình AI tổng quát không có
 Mặc dù các mô hình ngôn ngữ lớn đã được huấn luyện trên lượng dữ liệu khổng lồ, chúng không thể biết về:
 
@@ -185,7 +185,7 @@ Mặc dù các mô hình ngôn ngữ lớn đã được huấn luyện trên l�
 - Có thể truy vết nguồn gốc thông tin
 
 
-# 2. Roadmap: 3 cấp độ xây dựng chatbot
+# 3. Roadmap: 3 cấp độ xây dựng chatbot
 
 ## Level 1: Rule-based Chatbot
 
@@ -275,8 +275,8 @@ Công cụ phát triển:
 -	OpenAI API: mô hình AI của OpenAI, cho phép ứng dụng truy cập vào mô hình để tạo chatbot
 -	Hugging Face Transformers: Nền tảng lưu trữ các pre-trained models lớn.
 
-# 3. Bạn muốn tạo chatbot để làm gì?
-# 3.1 Xác định mục tiêu của chatbot
+# 4. Bạn muốn tạo chatbot để làm gì?
+# 4.1 Xác định mục tiêu của chatbot
 Trên thực tế, phần lớn AI chatbot hiện nay có thể được xếp vào một trong bốn nhóm chính.
 
 **FAQ Bot – Trả lời câu hỏi thường gặp**
@@ -331,7 +331,7 @@ Sau khi xác định loại chatbot, bạn cần trả lời rõ các câu hỏi
 
  Nếu chưa trả lời rõ những câu hỏi này, việc code sẽ rất dễ **“loạn hướng”** khiến tính năng thêm khó sửa, khó mở rộng.
 
-# 3.2 Những sai lầm thường gặp khi bắt đầu tạo chatbot
+# 4.2 Những sai lầm thường gặp khi bắt đầu tạo chatbot
 
 Khi mới làm chatbot, rất nhiều người gặp những sai lầm giống nhau:
 
@@ -351,7 +351,7 @@ Muốn chatbot “trả lời được mọi thứ” là một sai lầm phổ 
 
 API AI thường tính phí theo mức sử dụng. Ngoài ra, việc để lộ API key hoặc dữ liệu nhạy cảm có thể gây rủi ro nghiêm trọng.
 
-# 3.3 Khi nào nên bắt đầu làm demo?
+# 4.3 Khi nào nên bắt đầu làm demo?
 
 Demo **không nên** là bước đầu tiên, mà là bước dùng để kiểm chứng xem ý tưởng của bạn có thực sự hiệu quả hay không.
 
@@ -361,13 +361,13 @@ Một bản demo tốt không cần phải đầy đủ mọi tính năng, cũng
 
 Mục tiêu của demo không phải là tạo ra sản phẩm hoàn chỉnh, mà là giúp bạn phát hiện sớm các vấn đề về ý tưởng, phạm vi hoặc cách tiếp cận. Một demo đơn giản nhưng đúng trọng tâm sẽ giúp bạn tiết kiệm rất nhiều thời gian và công sức khi bước sang giai đoạn phát triển chatbot đầy đủ hơn.
 
-# 4. Xây dựng chatbot
+# 5. Xây dựng chatbot
 
 Sau khi đã hiểu cách hoạt động và các thành phần của một AI chatbot, chúng ta sẽ làm một demo AI chatbot đơn giản chạy trực tiếp trên Google Colab:
 
 Khác với cách tiếp cận phổ biến là gọi API từ các dịch vụ bên ngoài, trong blog này chatbot sẽ tải và chạy trực tiếp model AI trên môi trường Google Colab. Cách làm này giúp chúng ta hiểu rõ hơn cách mô hình hoạt động nội bộ, đồng thời phù hợp cho việc nghiên cứu, thử nghiệm và học tập mà không phụ thuộc vào API từ bên thứ ba.
 
-## 4.1. Cài đặt thư viện cần thiết
+## 5.1. Cài đặt thư viện cần thiết
 
 Trước tiên, chúng ta cần cài đặt một số thư viện quan trọng để phục vụ cho việc tải và chạy mô hình ngôn ngữ trực tiếp trên Google Colab:
 
@@ -383,7 +383,7 @@ Trước tiên, chúng ta cần cài đặt một số thư viện quan trọng 
 !pip install -q -U torch transformers accelerate bitsandbytes
 ```
 
-## 4.2. Tải mô hình ngôn ngữ
+## 5.2. Tải mô hình ngôn ngữ
 Trong demo này, chúng ta sử dụng model:
 
 ***Qwen2.5-1.5B-Instruct***
@@ -429,7 +429,7 @@ else:
 tokenizer = AutoTokenizer.from_pretrained(model_name, return_token_type_ids=False)
 print("⏳ Đã tải và load model ...")
 ```
-## 4.3 Hàm sử dụng chatbot đơn giản
+## 5.3 Hàm sử dụng chatbot đơn giản
 
 Luồng xử lý của hàm này đúng với tư duy đã trình bày ở các phần trước:
 
@@ -471,7 +471,7 @@ response = local_chatbot()
 
 ***Full source code tại: [Google Colab](https://colab.research.google.com/drive/1vpn7lnZbX3niohOM_7jMayMYqrmBVlIT?usp=sharing)***
 
-# 5. Kết luận: Tạo chatbot là bài toán tư duy trước khi là bài toán code
+# 6. Kết luận: Tạo chatbot là bài toán tư duy trước khi là bài toán code
 
 Qua bài viết này, có thể rút ra một điểm quan trọng:
 
@@ -506,11 +506,19 @@ Ngược lại, khi tư duy đã rõ ràng:
 *Trong bài blog tiếp theo, chúng ta sẽ đi từ demo đơn giản này để xây dựng một chatbot hoàn chỉnh hơn, sau đó deploy lên các nền tảng miễn phí để chạy như một sản phẩm demo thực sự.*
 # Trích dẫn
 Anthropic. (2025). Introducing Claude 4. https://www.anthropic.com/news/claude-4
+
 AWS. (n.d.). What is Retrieval-Augmented Generation (RAG)? Amazon Web Services. https://aws.amazon.com/what-is/retrieval-augmented-generation
+
 Google AI for Developers. (2026). Text generation | Gemini API. https://ai.google.dev/gemini-api/docs/text-generation
+
 Hire A.I. Developers. (2025). Fine-tuning vs. from scratch: When to use the OpenAI API vs. building a custom LLM. https://hire-aidevelopers.com/blog/fine-tuning-llms-openai-api-vs-custom-llm
+
 Hugging Face. (2026). Fine-tuning. https://huggingface.co/docs/transformers/en/training
+
 Microsoft. (2025, February 13). 5 key features and benefits of retrieval augmented generation (RAG). Microsoft Cloud Blog. https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/02/13/5-key-features-and-benefits-of-retrieval-augmented-generation-rag
+
 OpenAI. (2025). OpenAI for developers in 2025. https://developers.openai.com/blog/openai-for-developers-2025
+
 Rasiksuhail. (2026, January). The 2025 LLM API playbook: I tested all 4 major providers so you don't have to (Part 1/3: Choosing your stack). Medium. https://rasiksuhail.medium.com/the-2025-llm-api-playbook-i-tested-all-4-major-providers-so-you-dont-have-to-part-1-3-choosing-6dd11b47370b
+
 ScienceDirect. (2025). A survey on chatbots and large language models: Testing and evaluation techniques. https://www.sciencedirect.com/science/article/pii/S2949719125000044
