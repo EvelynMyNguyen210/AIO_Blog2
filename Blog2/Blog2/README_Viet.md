@@ -112,7 +112,7 @@ Trước khi trả về cho người dùng, response cần được xử lý:
 #### **Phương pháp 1: Sử dụng AI thông qua API**
 Đây là phương pháp phổ biến nhất trong các ứng dụng thực tế. Nhà phát triển sử dụng các mô hình đã được huấn luyện sẵn thông qua API (OpenAI, 2025; Google AI for Developers, 2026).
 
-Bảng so sánh các nhà cung cấp mô hình ngôn ngữ lớn phổ biến (tháng 1/2026)
+
 
 | Nhà cung cấp              | Mô hình mới nhất (tháng 1/2026)                  | Điểm mạnh                                                                 | Hạn chế                                                                 |
 |---------------------------|--------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -120,6 +120,10 @@ Bảng so sánh các nhà cung cấp mô hình ngôn ngữ lớn phổ biến (t
 | **Anthropic**            | Claude Opus 4.5 (cùng Sonnet 4.5, Haiku 4.5)    | An toàn cao (constitutional AI), ngữ cảnh dài (~200K tokens), xuất sắc trong coding, AI agents và ứng dụng chuyên ngành (y tế, pháp lý), giảm thiểu hallucination hiệu quả | Tốc độ API đôi khi chậm hơn so với đối thủ, hỗ trợ đa phương thức còn hạn chế (chủ yếu tập trung vào text), chi phí cao cho model flagship |
 | **Google**               | Gemini 3 Pro / Gemini 3 Flash (với Deep Think mode) | Ngữ cảnh cực dài (lên đến 1M tokens), đa phương thức toàn diện (text, hình ảnh, video, audio), tích hợp sâu với hệ sinh thái Google (Search, Workspace, YouTube), tốc độ cao ở biến thể Flash | Chi phí cao cho usage lớn, hệ sinh thái khép kín, phụ thuộc Google Cloud, một số tính năng vẫn ở giai đoạn experimental |
 | **Hugging Face (Open-source hub)** | Llama series (Meta), Mistral/Mixtral (Mistral AI), Qwen, Gemma… | Miễn phí, mã nguồn mở, dễ tùy chỉnh và fine-tune, cộng đồng hỗ trợ lớn, có thể triển khai cục bộ hoặc offline, không phụ thuộc nhà cung cấp | Yêu cầu hạ tầng tính toán mạnh (GPU/server) để chạy hiệu quả, thiếu hỗ trợ chính thức và cập nhật tự động, hiệu năng có thể kém hơn so với các mô hình frontier closed ở một số nhiệm vụ phức tạp |
+
+<p align="center">
+  <em>Bảng 1.1 So sánh các nhà cung cấp mô hình ngôn ngữ lớn phổ biến (tháng 1/2026)</em>
+</p>
 
 **Ghi chú**:
 - Bảng tập trung vào các mô hình cao cấp nhất và phổ biến nhất dùng để phát triển AI chatbot qua API hoặc tùy chỉnh cục bộ.
@@ -392,7 +396,7 @@ Trong demo này, chúng ta sử dụng model:
 
 - Phù hợp cho demo và chạy thử
 
-Bạn cũng có tìm và thay mô hình phù hợp tại ***[Hugging Face](https://huggingface.co/)***
+Bạn cũng có tìm và thay mô hình phù hợp tại ***[Hugging Face](https://huggingface.co/models)***
 
 ```
 import torch
