@@ -29,7 +29,7 @@ Một điểm quan trọng cần làm rõ là sự khác biệt giữa phát tri
 
 <p align="center">
   <img src="images\blog2_so_sanh_quy_trinh.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 0.1. So sánh quy trình "Phát triển mô hình AI từ đầu" và "Xây dựng chatbot sử dụng AI API"</em>
+  <em>Hình 1.1. So sánh quy trình "Phát triển mô hình AI từ đầu" và "Xây dựng chatbot sử dụng AI API"</em>
 </p>
 
 Có thể hình dung quá trình xây dựng chatbot giống như việc xây dựng một tòa nhà:
@@ -48,7 +48,7 @@ Một hệ thống chatbot dựa trên AI không chỉ đơn thuần là một m
 
 <p align="center">
   <img src="images\blog_2_thanh_phan_he_thong_AI_chatbot.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 1.1. Các thành phần chính của một hệ thống AI chatbot</em>
+  <em>Hình 2.1. Các thành phần chính của một hệ thống AI chatbot</em>
 </p>
 
 ## 2.1. Giao diện người dùng: 
