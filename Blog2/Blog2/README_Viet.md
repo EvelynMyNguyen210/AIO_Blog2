@@ -89,15 +89,15 @@ Một chatbot chất lượng cần có khả năng duy trì ngữ cảnh xuyên
 - Theo dõi trạng thái hiện tại của hội thoại
 - Quản lý session riêng biệt cho từng người dùng
 
-### c) Định tuyến logic (Logic Routing)
+### c) Định tuyến logic
 Quyết định cách xử lý phù hợp cho từng loại request:
 
-- Xác định xem câu hỏi nên được xử lý bằng rule-based hay AI-based
+- Xác định xem câu hỏi nên được xử lý dựa trên quy tắc hay dựa trên AI
 - Kích hoạt các chức năng đặc biệt (truy vấn cơ sở dữ liệu, lấy dữ liệu từ bên ngoài)
 - Xử lý các lệnh hệ thống
 
-### d) Hậu xử lý kết quả (Response Postprocessing)
-Trước khi trả về cho người dùng, response cần được xử lý:
+### d) Hậu xử lý kết quả
+Trước khi trả về cho người dùng, phản hồi cần được xử lý:
 
 - Định dạng văn bản
 - Kiểm tra độ dài phù hợp với platform
