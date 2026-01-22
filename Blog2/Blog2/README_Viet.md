@@ -28,7 +28,7 @@ Một điểm quan trọng cần làm rõ là sự khác biệt giữa phát tri
 - Xử lý logic nghiệp vụ cụ thể
 
 <p align="center">
-  <img src="images\blog_2_so_sanh_quy_trinh.png" style="margin: 0 auto; display: block;"><br/>
+  <img src="images\blog2_so_sanh_quy_trinh.png" style="margin: 0 auto; display: block;"><br/>
   <em>Hình 0.1. So sánh quy trình "Phát triển mô hình AI từ đầu" và "Xây dựng chatbot sử dụng AI API"</em>
 </p>
 
