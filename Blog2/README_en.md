@@ -58,6 +58,8 @@ Characteristics of this type:
 - Must strictly control content  
 - Mistakes can cause serious consequences  
 
+![Uploading Copilot_20260123_163207.png…]()
+
 <p align="center">
   <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_155702_32fc2bbb.jpeg" style="margin: 0 auto; display: block;"><br/>
   <em>Figure 4.4. Domain-specific Bot</em>
