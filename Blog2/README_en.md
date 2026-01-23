@@ -187,6 +187,80 @@ Although large language models have been trained on massive amounts of data, the
 - Reduces AI hallucination (fabricated information)
 - Enables traceability of information sources
 
+# 3. Three level of building chatbot
+## Level 1: Rule-based chatbot
+
+Rule-based chatbot is based on pre-programmed sequence. When user request, chatbot will process and compare the request with pre-defined conditions to respond.
+
+Application of rule-based chatbot:
+-	Customer service: Answer FAQs, report order, give suggestions for basic problem.
+-	Healthcare: Scheduling, report health information, aftercare data for patient.
+-	Banking: Answer simple request about transaction or banking service.
+
+Advantages:
+-	With the use of procedure programming, chatbot establishment and deployment is fast and simple, AI training is not required.
+-	Efficient in processing repetitive tasks, respond quickly leading to manpower saving.
+-	Fast and accurate response thanks to pre-programming.
+-	Low development and operating costs.
+
+Disadvantages:
+-	Unable to answer out-of-scope issues.
+-	Unable to self-learn, higher development is difficult as company has to add in new feature and update chatbot manually.
+-	Unable to handle complicated conversation, which lowering user experience.
+
+Development tools:
+-	By using procedure programming, rule-based chatbot can be developed with programming language such as Python. Conditions are set with if-else control flow or pattern matching.
+
+## Level 2: ML-based chatbot
+
+Machine Learning chatbot applies machine learning algorithms and NLP during development process. In contrast to rule-based chatbot, ML-based chatbot feedbacks are smarter and more flexible with AI training instead of pre-programming.
+
+Applications of ML-based chatbot:
+-	Similar to rule-based chatbot, ML-based chatbot’s applications are wide spread in customer services, healthcare. However, with machine learning, the responses are much more efficient.
+-	In customer service, apart from data provision, chatbot is able to suggest additional information based on the conversation.
+-	In healthcare service, apart from health information, ML-based chatbot can track patient condition and report it to doctors for faster support. 
+
+Advantages:
+-	Chatbot responds more flexible due to being able to understand human language, thus giving more information, which improves user experience.
+-	Chatbot is able to self-learn throughout processing with customers, thus chatbot is frequently updated
+
+Disadvantages:
+-	High training cost as well as maintaining cost. Due to using AI, it requires a large amount of high qualities training data in larger fields to train the chatbot.
+-	Training and deploying chatbot is much more difficult compares to rule-based chatbot.
+
+Development tools:
+-	Tensorflow, Pytorch: Two large, well-known libraries and frameworks in deep learning to train ML-based chatbot. Including algorithms, libraries to boost the process of building the chatbot.
+-	spaCy: NLP library for natural language processing.
+-	Hugging Face Transformers: Platform of many large pre-trained models such as GPR, BERT.
+-	Rasa: Open-source framework for chatbot, including NLU, intent classification and entity extraction.
+
+## Level 3: LLM-based chatbot
+
+LLM-based chatbot can be viewed as an agent operated by Large Language Model. It is trained on a massive data, being able to understand human language, create natural responses and can interact like human.
+
+Applications of LLM-based chatbot:
+-	With LLM, chatbot can be used as an agent to help user in various situations, including customer service and healthcare.
+-	Helps in explaining policy, a paragraph or document summarization.
+-	Able to support resolving a technical issue, provide guiding.
+-	Create contents based on request.
+
+Advantages:
+-	Deeply understand human language, chatbot is able to respond complicated questions or recommend user with various information and not limited to any contents.
+-	Be able to process a difficult request, respond generally and can create contents.
+-	Automate repetitive tasks such as report or summarize information, which helps save time and increases productivity.
+
+Disadvantages:
+-	LLM chatbot requires large calculating materials as training and deploying LLM requires high quality hardware and infrastructure.
+-	As intelligent as it should be, it is unavoidable that LLM chatbot may create wrong information due to a bad training process.
+
+Development tools:
+-	LangChain: Open-source framework that helps build chatbot using large language model.
+-	Llama: Meta’s open-source large language model.
+-	OpenAI API: AI model from OpenAI, enable developer to access its model to build chatbot.
+-	Hugging Face Transformers: Platform of many large pre-trained models.
+
+
+
 # 4. Why do you want to create a chatbot?
 ## 4.1 Defining the purpose of the chatbot
 In reality, most AI chatbots today can be categorized into one of four main groups.
