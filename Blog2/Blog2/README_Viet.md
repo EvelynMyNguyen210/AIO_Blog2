@@ -339,17 +339,62 @@ Khi mới làm chatbot, rất nhiều người gặp những sai lầm giống n
 
 Chatbot không có nhận thức hay cảm xúc. Nó chỉ xử lý ngôn ngữ và dự đoán câu trả lời dựa trên dữ liệu đã học. Kỳ vọng chatbot suy nghĩ như con người sẽ dẫn đến thất vọng.
 
+Ví dụ, bạn tạo một chatbot tư vấn sản phẩm và hỏi:
+
+“Mình muốn mua điện thoại cho bố mẹ dùng cho tiện.”
+
+ Con người sẽ tự hiểu rằng:
+
+- Người lớn tuổi
+
+- Ưu tiên dễ dùng, pin tốt, chữ to
+
+Nhưng chatbot có thể chỉ bám vào từ khóa “điện thoại” và đưa ra danh sách sản phẩm phổ biến, không phù hợp với ngữ cảnh. Điều này xảy ra vì chatbot không có trải nghiệm sống hay suy luận xã hội, mà chỉ phân tích mẫu ngôn ngữ dựa trên dữ liệu đã học.
+
 **Tin chatbot 100%**
 
 AI chatbot có thể trả lời sai nhưng nghe rất thuyết phục. Nếu không có cơ chế kiểm soát, chatbot có thể tạo ra thông tin sai lệch mà người dùng khó nhận ra.
+
+Ví dụ, một chatbot học tập được hỏi:
+
+“Công thức này áp dụng trong trường hợp nào?”
+
+Chatbot có thể trả lời rất chi tiết, dùng nhiều thuật ngữ chuyên môn, nhưng nội dung lại sai hoặc không còn đúng với kiến thức mới. Nếu người dùng không kiểm chứng lại, thông tin sai này có thể được sử dụng như sự thật.
+
+Vấn đề ở đây không phải chatbot “nói dối”, mà là nó **không kiểm chứng thông tin**, chỉ dự đoán câu trả lời có khả năng xuất hiện cao nhất.
 
 **Không giới hạn phạm vi**
 
 Muốn chatbot “trả lời được mọi thứ” là một sai lầm phổ biến. Chatbot càng tập trung vào một phạm vi hẹp thì càng hiệu quả và dễ kiểm soát.
 
+Ví dụ, bạn nói:
+
+“Chatbot của mình vừa trả lời câu hỏi, vừa tư vấn, vừa trò chuyện, vừa làm trợ lý cá nhân.”
+
+Kết quả thường là:
+
+- Câu trả lời lan man
+- Không rõ chatbot mạnh ở điểm nào
+- Khó kiểm soát chất lượng
+  
+Trong thực tế, một chatbot chỉ trả lời tốt khi phạm vi nhiệm vụ của nó được giới hạn rõ ràng. Chatbot trả lời FAQ sẽ khác chatbot đặt lịch, và cả hai đều khác chatbot trò chuyện tự nhiên.
+
 **Bỏ qua chi phí và bảo mật**
 
-API AI thường tính phí theo mức sử dụng. Ngoài ra, việc để lộ API key hoặc dữ liệu nhạy cảm có thể gây rủi ro nghiêm trọng.
+Khi mới làm chatbot, nhiều người chỉ tập trung vào việc “làm cho chạy được”, mà quên mất các vấn đề phía sau.
+
+Ví dụ:
+
+- Đặt API key trực tiếp trong code và upload lên GitHub
+- Không giới hạn số lượng request
+- Không theo dõi chi phí sử dụng API
+  
+Hậu quả có thể là:
+- API key bị lộ
+- Tài khoản bị sử dụng trái phép
+- Chi phí tăng nhanh ngoài dự kiến
+  
+Những vấn đề này thường chỉ xuất hiện sau khi chatbot đã chạy, và lúc đó việc sửa lại sẽ tốn nhiều công sức hơn.
 
 # 4.3 Khi nào nên bắt đầu làm demo?
 
