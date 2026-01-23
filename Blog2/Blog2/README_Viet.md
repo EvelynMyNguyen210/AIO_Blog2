@@ -317,6 +317,7 @@ Loại chatbot này thường được dùng cho giải trí, hỗ trợ tinh th
 
 Tuy nhiên có một lưu ý: Conversational bot khó làm tốt hơn các loại chatbot khác, vì yêu cầu xử lý ngữ cảnh và lịch sử hội thoại dài.
 
+![conservational bot](https://github.com/user-attachments/assets/9f5f7a38-1b2f-4e81-9f45-819263d6f07c)
 <p align="center">
   <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_153349_1ce0facd.webp" style="margin: 0 auto; display: block;"><br/>
   <em>Hình 4.3. Conversational Bot</em>
