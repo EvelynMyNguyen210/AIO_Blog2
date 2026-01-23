@@ -1,3 +1,192 @@
+# 1. Developing AI Chatbots Today Is More Accessible Than Ever
+
+## 1.1. Changes in Chatbot Development Approaches
+
+When thinking about building an AI chatbot, many people often assume it is a highly complex task that requires deep expertise in artificial intelligence and machine learning. However, in recent years, the landscape of chatbot development has changed significantly (OpenAI, 2025; Rasiksuhail, 2026).
+
+This transformation stems from two main factors:
+
+**First, the emergence of AI services in the form of APIs:** Organizations such as OpenAI, Anthropic, and Google have invested billions of dollars to develop extremely powerful large language models (LLMs). Instead of requiring users to build and train models from scratch, these companies provide access to their models through an Application Programming Interface (API) (OpenAI, 2025; Anthropic, 2025; Google AI for Developers, 2026).
+
+**Second, the advancement of supporting tools and libraries.** Today, integrating AI into applications has become much simpler thanks to optimized frameworks and libraries. This allows developers to focus on business logic rather than worrying about the intricate technical details of machine learning.
+
+## 1.2. Distinguishing Between AI Model Development and Chatbot Building
+
+One important point to clarify is the difference between developing an AI model from scratch and building a chatbot application (Hire A.I. Developers, 2025).
+
+**Developing an AI model requires:**
+
+- In-depth knowledge of neural networks and deep learning architectures
+- The ability to process and prepare large-scale training data
+- Powerful computing resources (GPU clusters, TPUs)
+- Significant time and cost for the training process
+
+**In contrast, building a chatbot focuses on:**
+
+- Designing conversation flows
+- Integrating system components
+- Managing context and state
+- Handling specific business logic
+
+<p align="center">
+  <img src="images\blog_2_comparison.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Figure 1.1. Comparison of the processes: "Developing an AI model from scratch" vs. "Building a chatbot using AI APIs"</em>
+</p>
+
+The process of building a chatbot can be likened to constructing a building:
+
+When building a house, people do not need to produce bricks or cement from raw materials themselves. Instead, engineers and architects focus on designing blueprints, selecting appropriate materials, and organizing efficient construction.
+
+Similarly, when building a chatbot:
+
+- The AI model is like ready-made building materials
+- The developer’s job is to design the system architecture
+- Connecting the components to create a complete product
+
+# 2. What Are the Minimum Components of an AI Chatbot?
+
+An AI-based chatbot system is not simply a large language model; it is an integrated system with multiple tightly coordinated components to deliver a natural and effective conversational experience (ScienceDirect, 2025). Below are the four core components essential for a minimal AI chatbot:
+
+<p align="center">
+  <img src="images\blog_2_comparison.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Figure 2.1. Main components of an AI chatbot system</em>
+</p>
+
+## 2.1. User Interface
+
+**Role:** Creating the point of contact between the user and the chatbot system
+
+The user interface is the layer that directly interacts with the end user. Depending on the platform and use case, the interface can be implemented in various forms.
+
+**Common types of interfaces:**
+
+- Web-based interface: Chat widget integrated into a business website
+- Mobile application: Chat interface within a mobile app
+- Messaging platforms: Integration with Facebook Messenger, Telegram, Zalo
+- Voice interface: Voice-based interface like Siri or Google Assistant
+- Command-line interface: Command-line interface for testing and development purposes
+
+**Main functions:**
+
+- Collecting and standardizing user input (text, voice)
+- Displaying responses in an appropriate format
+
+## 2.2. Logic Processing Layer
+
+**Role:** Central coordinator and handler of the conversation flow
+
+This is the component that developers primarily implement, responsible for orchestrating the entire process from receiving input to returning the response.
+
+### a) Input Data Preprocessing
+Before sending data to the AI model, the following standardization steps are necessary:
+
+- Removing unnecessary characters (extra spaces, special characters)
+- Standardizing text format
+- Basic spell-checking
+- Language detection for multilingual systems
+
+### b) Conversation Context Management
+A high-quality chatbot must maintain context throughout the conversation:
+
+- Storing conversation history
+- Tracking the current state of the dialogue
+- Managing separate sessions for each user
+
+### c) Logic Routing
+Deciding the appropriate handling method for each type of request:
+
+- Determining whether a question should be handled by rule-based logic or AI-based logic
+- Triggering special functions (database queries, external data retrieval)
+- Processing system commands
+
+### d) Response Postprocessing
+Before returning the response to the user, it needs to be refined:
+
+- Formatting the text
+- Checking length compatibility with the platform
+- Filtering inappropriate content
+
+## 2.3. AI Model or Access Service
+
+**Role:** Natural language processing and response generation
+
+This component provides the ability to understand and generate natural language for the chatbot. There are two main approaches to integrating this component:
+
+#### **Approach 1: Using AI through APIs**
+This is the most common method in real-world applications. Developers use pre-trained models via APIs (OpenAI, 2025; Google AI for Developers, 2026).
+
+| Provider                  | Latest Model (January 2026)                      | Strengths                                                                 | Limitations                                                             |
+|---------------------------|--------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **OpenAI**               | GPT-5.2 (and Pro, Instant variants), gpt-oss (open-weight 120B/20B) | Leading reasoning performance across many benchmarks, strong multimodal support (text, images, voice), context window up to 400K tokens, excellent integration for enterprise and AI agents | High cost for heavy usage, complete dependency on OpenAI infrastructure, some privacy concerns |
+| **Anthropic**            | Claude Opus 4.5 (along with Sonnet 4.5, Haiku 4.5) | High safety (constitutional AI), long context (~200K tokens), excellent in coding, AI agents, and domain-specific applications (healthcare, legal), effective hallucination reduction | API speed sometimes slower than competitors, limited multimodal support (primarily text-focused), high cost for flagship models |
+| **Google**               | Gemini 3 Pro / Gemini 3 Flash (with Deep Think mode) | Extremely long context (up to 1M tokens), comprehensive multimodal capabilities (text, images, video, audio), deep integration with Google ecosystem (Search, Workspace, YouTube), high speed in Flash variant | High cost for large usage, closed ecosystem, dependency on Google Cloud, some features still experimental |
+| **Hugging Face (Open-source hub)** | Llama series (Meta), Mistral/Mixtral (Mistral AI), Qwen, Gemma… | Free, open-source, easy to customize and fine-tune, large community support, deployable locally or offline, no vendor dependency | Requires strong computing infrastructure (GPU/server) for efficient performance, no official support or automatic updates, performance may lag behind frontier closed models on some complex tasks |
+
+<p align="center">
+  <em>Table 2.1 Comparison of popular large language model providers (January 2026)</em>
+</p>
+
+**Notes:**
+- The table focuses on the most advanced and widely used models for developing AI chatbots via API or local customization.
+- Context window, cost, and performance may change over time; it is recommended to check the official documentation of each provider before deployment.
+- For personal or academic projects, open-source models on Hugging Face often offer a balanced choice between cost and customization capability.
+
+**Advantages of the API approach:**
+
+- No need for complex infrastructure (such as large GPU clusters)
+- Fast deployment and easy scalability
+- Models are continuously updated and improved by the provider
+- Detailed documentation and good technical support available
+
+**Disadvantages:**
+
+- Operational costs are usage-based
+- Complete dependency on third-party providers
+- Potential increased latency due to network communication
+- Limited deep customization capabilities
+
+#### **Approach 2: Self-deployment and Model Training**
+This approach is suitable for organizations with special needs regarding security, customization, or cost.
+
+General process:
+
+1. Select base model: Choose a suitable pre-trained large language model, e.g., BERT, GPT-2, LLaMA, Mistral, or newer variants from the open-source community.
+2. Prepare training data: Collect and process domain-specific data, including labeling if necessary, data cleaning, and formatting suitable for fine-tuning.
+3. Perform fine-tuning: Retrain the model on the custom dataset, often using resource-efficient techniques such as PEFT (Parameter-Efficient Fine-Tuning), LoRA, or QLoRA to reduce hardware requirements.
+4. Deploy the model: Host the fine-tuned model on a local server, cloud service, or specialized platform to serve requests.
+5. Build API wrapper: Create a communication layer (API layer) so other applications can easily call the model through standard endpoints (e.g., REST API or FastAPI).
+
+**Advantages:**
+
+- Full control over data and information security
+- Deep customization capability, optimized for specific domains or tasks
+- No dependency on third-party providers
+- Operational costs can be significantly lower at large and long-term scale
+
+**Disadvantages:**
+
+- Requires high expertise in machine learning and deep learning (ML/DL)
+- Requires investment in powerful computing infrastructure (especially GPUs or TPUs)
+- Development and testing time is much longer than the API approach
+- Must take full responsibility for model maintenance, updates, and continuous optimization
+
+## 2.4. Component 4: Knowledge Base – Optional
+
+**Role:** Providing domain-specific information that general AI models do not possess
+
+Although large language models have been trained on massive amounts of data, they cannot know about:
+
+- Internal organizational information (product prices, internal policies)
+- Real-time data (product inventory, appointment schedules)
+- Information updated after the training cutoff date
+
+**Benefits:**
+
+- The chatbot can answer internal information without needing to fine-tune the model
+- Easy to update the knowledge base without retraining the model
+- Reduces AI hallucination (fabricated information)
+- Enables traceability of information sources
+
 # 4. Why do you want to create a chatbot?
 ## 4.1 Defining the purpose of the chatbot
 In reality, most AI chatbots today can be categorized into one of four main groups.
