@@ -229,7 +229,6 @@ This type is often used for entertainment, emotional support, or social interact
 
 However, note: Conversational bots are harder to build than other types, because they require handling context and long conversation history.
 
-`https://github.com/user-attachments/assets/9f5f7a38-1b2f-4e81-9f45-819263d6f07c`
 <p align="center">
   <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_153349_1ce0facd.webp" style="margin: 0 auto; display: block;"><br/>
   <em>Figure 4.3. Conversational Bot</em>
@@ -260,8 +259,6 @@ After identifying the type of chatbot, you need to clearly answer the following 
 - Does it require private data, or only general knowledge?  
 
 If these questions are not clearly answered, coding will easily go **“off track”**, making features harder to fix and expand.
-
----
 
 ## 4.2 Common mistakes when starting to build a chatbot
 
