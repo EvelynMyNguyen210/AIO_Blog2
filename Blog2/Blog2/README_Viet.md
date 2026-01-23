@@ -193,7 +193,7 @@ Chatbot rule-based hoạt động dựa trên các quy tắc được lập trì
 
 <p align="center">
   <img src="images\rulebased-chatbot_part2.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 2.1. Rule-based Chatbot</em>
+  <em>Hình 3.1. Rule-based Chatbot</em>
 </p>
 
 Các lĩnh vực ứng dụng của rule-based chatbot:
@@ -222,7 +222,7 @@ Machine Learning chatbot ứng dụng các thuật toán machine learning và NL
 
 <p align="center">
   <img src="images\ai-chatbot_part2.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 2.2. Machine Learning-based Chatbot</em>
+  <em>Hình 3.2. Machine Learning-based Chatbot</em>
 </p>
 
 Ứng dụng của ML-based chatbot:
@@ -251,7 +251,7 @@ LLM-based chatbot có thể xem là một trợ lí ảo được vận hành b�
 
 <p align="center">
   <img src="images\LLM_chatbot_part2.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 2.3. LLM-based chatbot</em>
+  <em>Hình 3.3. LLM-based chatbot</em>
 </p>
 
 Ứng dụng của LLM-based chatbot:
