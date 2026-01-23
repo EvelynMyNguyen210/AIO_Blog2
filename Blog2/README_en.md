@@ -1,3 +1,143 @@
+# 4. Why do you want to create a chatbot?
+## 4.1 Defining the purpose of the chatbot
+In reality, most AI chatbots today can be categorized into one of four main groups.
+
+**FAQ Bot – Frequently Asked Questions Bot**  
+This is the most common type of chatbot, often used in customer service.  
+- Answers repetitive questions: working hours, policies, user guides  
+- No need for long conversations  
+- Content is relatively fixed  
+
+This type of chatbot is suitable for reducing human workload, especially in customer support systems.
+
+<p align="center">
+  <img src="https://aioconquer.aivietnam.edu.vn/static/uploads/20260123_152134_f48bddef.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Figure 4.1. FAQ chatbot</em>
+</p>
+
+**Task-oriented Bot – Chatbot for task execution**  
+Unlike FAQ Bots, this type not only answers but also **guides users through a process**.  
+
+Examples:  
+- Scheduling appointments  
+- Booking services  
+- Step-by-step information lookup  
+
+The focus of this type of chatbot is logic and conversation flow, not natural chatting style.
+
+<p align="center">
+  <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_153156_3c398178.jpeg" style="margin: 0 auto; display: block;"><br/>
+  <em>Figure 4.2. Task-oriented Bot</em>
+</p>
+
+**Conversational Bot – Natural conversation chatbot**  
+This type of chatbot is like a “chatting companion.”  
+- Goal is to maintain conversation  
+- Responses need to be natural and flexible  
+- Not necessarily “absolutely correct”  
+
+This type is often used for entertainment, emotional support, or social interaction.  
+
+However, note: Conversational bots are harder to build than other types, because they require handling context and long conversation history.
+
+`https://github.com/user-attachments/assets/9f5f7a38-1b2f-4e81-9f45-819263d6f07c`
+<p align="center">
+  <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_153349_1ce0facd.webp" style="margin: 0 auto; display: block;"><br/>
+  <em>Figure 4.3. Conversational Bot</em>
+</p>
+
+**Domain-specific Bot – Chatbot for a specific field**  
+
+Chatbots designed for a particular domain such as:  
+- Healthcare  
+- Education  
+- Sales  
+
+Characteristics of this type:  
+- Requires domain-specific data  
+- Must strictly control content  
+- Mistakes can cause serious consequences  
+
+<p align="center">
+  <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_155702_32fc2bbb.jpeg" style="margin: 0 auto; display: block;"><br/>
+  <em>Figure 4.4. Domain-specific Bot</em>
+</p>
+
+**Mandatory questions before coding**  
+After identifying the type of chatbot, you need to clearly answer the following questions:  
+- Who is this chatbot for?  
+- What kind of questions will it answer?  
+- Does it need to remember conversation history or just answer individual questions?  
+- Does it require private data, or only general knowledge?  
+
+If these questions are not clearly answered, coding will easily go **“off track”**, making features harder to fix and expand.
+
+---
+
+## 4.2 Common mistakes when starting to build a chatbot
+
+When first building a chatbot, many people encounter the same mistakes:
+
+**Expecting the chatbot to “understand” like a human**  
+Chatbots have no awareness or emotions. They only process language and predict answers based on learned data. Expecting them to think like humans will lead to disappointment.  
+
+Example: You create a product consulting chatbot and ask:  
+“I want to buy a phone for my parents for convenience.”  
+
+Humans will naturally understand:  
+- Elderly users  
+- Prioritize ease of use, good battery, large text  
+
+But the chatbot may only latch onto the keyword “phone” and provide a list of popular products, not suitable for the context. This happens because chatbots lack life experience or social reasoning, and only analyze language patterns from training data.
+
+**Trusting the chatbot 100%**  
+AI chatbots can give wrong answers but sound very convincing. Without control mechanisms, they may generate misleading information that users cannot easily detect.  
+
+Example: A learning chatbot is asked:  
+“In which case is this formula applied?”  
+
+It may respond with detailed explanations and technical terms, but the content could be wrong or outdated. If users don’t verify, this false information may be taken as fact.  
+
+The issue is not that the chatbot “lies,” but that it **does not verify information**, only predicts the most likely answer.
+
+**Not limiting scope**  
+Wanting a chatbot to “answer everything” is a common mistake. The narrower the scope, the more effective and controllable the chatbot becomes.  
+
+Example: You say:  
+“My chatbot answers questions, gives advice, chats, and acts as a personal assistant.”  
+
+The result is usually:  
+- Rambling answers  
+- Unclear strengths  
+- Hard to control quality  
+
+In practice, a chatbot only performs well when its task scope is clearly defined. An FAQ chatbot is different from a scheduling chatbot, and both differ from a conversational chatbot.
+
+**Ignoring cost and security**  
+When starting, many people focus only on “making it run,” forgetting backend issues.  
+
+Examples:  
+- Placing API keys directly in code and uploading to GitHub  
+- Not limiting the number of requests  
+- Not monitoring API usage costs  
+
+Consequences:  
+- API key leaks  
+- Unauthorized account usage  
+- Costs rising unexpectedly  
+
+These problems often appear after deployment, and fixing them later is much more costly.
+
+## 4.3 When should you start making a demo?
+
+A demo **should not** be the first step, but rather a way to test whether your idea is truly effective.  
+
+After clearly defining what the chatbot is for and who it serves, you can then think about making a small demo. A demo should begin once the chatbot’s purpose is clear and its scope narrowed. This is the time to check one simple but crucial question: *Does this chatbot solve the problem I set out to address?*  
+
+A good demo doesn’t need full features, beautiful UI, or perfect UX. Instead, it should focus on the chatbot’s core functionality. If the chatbot is meant to answer questions, test whether it answers correctly and consistently. If it is designed to support a task, check whether it completes that task smoothly.  
+
+The goal of a demo is not to create a finished product, but to help you detect early issues in the idea, scope, or approach. A simple but focused demo will save you a lot of time and effort when moving to full chatbot development.
+
 # 5. Coding an AI Chatbot
 
 After understanding how an AI chatbot works and what components it consists of, we will build a simple demo chatbot that runs on Google Colab.
