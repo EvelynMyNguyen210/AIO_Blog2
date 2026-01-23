@@ -188,9 +188,15 @@ Although large language models have been trained on massive amounts of data, the
 - Enables traceability of information sources
 
 # 3. Three level of building chatbot
+
 ## Level 1: Rule-based chatbot
 
 Rule-based chatbot is based on pre-programmed sequence. When user request, chatbot will process and compare the request with pre-defined conditions to respond.
+
+<p align="center">
+  <img src="images\rulebased-chatbot_part2.png" style="margin: 0 auto; display: block;"><br/>
+  <em> Figure 3.1. Rule-based Chatbot</em>
+</p>
 
 Application of rule-based chatbot:
 -	Customer service: Answer FAQs, report order, give suggestions for basic problem.
@@ -215,6 +221,11 @@ Development tools:
 
 Machine Learning chatbot applies machine learning algorithms and NLP during development process. In contrast to rule-based chatbot, ML-based chatbot feedbacks are smarter and more flexible with AI training instead of pre-programming.
 
+<p align="center">
+  <img src="images\ai-chatbot_part2.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Figure 3.2. Machine Learning-based Chatbot</em>
+</p>
+
 Applications of ML-based chatbot:
 -	Similar to rule-based chatbot, ML-based chatbot’s applications are wide spread in customer services, healthcare. However, with machine learning, the responses are much more efficient.
 -	In customer service, apart from data provision, chatbot is able to suggest additional information based on the conversation.
@@ -237,6 +248,11 @@ Development tools:
 ## Level 3: LLM-based chatbot
 
 LLM-based chatbot can be viewed as an agent operated by Large Language Model. It is trained on a massive data, being able to understand human language, create natural responses and can interact like human.
+
+<p align="center">
+  <img src="images\LLM_chatbot_part2.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Figure 3.3. LLM-based chatbot</em>
+</p>
 
 Applications of LLM-based chatbot:
 -	With LLM, chatbot can be used as an agent to help user in various situations, including customer service and healthcare.
