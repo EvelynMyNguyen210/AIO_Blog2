@@ -287,6 +287,10 @@ Trên thực tế, phần lớn AI chatbot hiện nay có thể được xếp v
 
 Loại chatbot này phù hợp để giảm tải cho con người, đặc biệt trong các hệ thống hỗ trợ khách hàng.
 
+<p align="center">
+  <img src="https://aioconquer.aivietnam.edu.vn/static/uploads/20260123_152134_f48bddef.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Hình 4.1. FAQ chatbot</em>
+</p>
 
 **Task-oriented Bot – Chatbot thực hiện tác vụ**
 Khác với FAQ Bot, loại chatbot này không chỉ trả lời mà còn **dẫn người dùng qua một quy trình**.
@@ -298,8 +302,12 @@ Ví dụ:
 
 Trọng tâm của chatbot dạng này là logic và luồng hội thoại, không phải kiểu nói chuyện tự nhiên.
 
-**Conversational Bot – Chatbot trò chuyện tự nhiên**
+<p align="center">
+  <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_153156_3c398178.jpeg" style="margin: 0 auto; display: block;"><br/>
+  <em>Hình 4.2.Task-oriented Bot</em>
+</p>
 
+**Conversational Bot – Chatbot trò chuyện tự nhiên**
 Đây là dạng chatbot giống một “bạn trò chuyện”.
 - Mục tiêu là duy trì hội thoại
 - Câu trả lời cần tự nhiên, linh hoạt
@@ -308,6 +316,11 @@ Trọng tâm của chatbot dạng này là logic và luồng hội thoại, khô
 Loại chatbot này thường được dùng cho giải trí, hỗ trợ tinh thần hoặc tương tác xã hội.
 
 Tuy nhiên có một lưu ý: Conversational bot khó làm tốt hơn các loại chatbot khác, vì yêu cầu xử lý ngữ cảnh và lịch sử hội thoại dài.
+
+<p align="center">
+  <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_153349_1ce0facd.webp" style="margin: 0 auto; display: block;"><br/>
+  <em>Hình 4.3. Conversational Bot</em>
+</p>
 
 **Domain-specific Bot – Chatbot cho lĩnh vực cụ thể**
 
@@ -321,6 +334,11 @@ Chatbot được thiết kế cho một lĩnh vực nhất định như:
 - Cần dữ liệu riêng
 - Phải kiểm soát chặt nội dung
 - Sai sót có thể gây hậu quả lớn
+
+<p align="center">
+  <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_155702_32fc2bbb.jpeg" style="margin: 0 auto; display: block;"><br/>
+  <em>Hình 4.4. Domain-specific Bot</em>
+</p>
 
 **Những câu hỏi bắt buộc phải trả lời trước khi code**
 
@@ -514,6 +532,10 @@ def local_chatbot():
 
 response = local_chatbot()
 ```
+<p align="center">
+  <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_155047_fe914bcb.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Hình 5.1. Kết quả </em>
+</p>
 
 ***Full source code tại: [Google Colab](https://colab.research.google.com/drive/1vpn7lnZbX3niohOM_7jMayMYqrmBVlIT?usp=sharing)***
 
