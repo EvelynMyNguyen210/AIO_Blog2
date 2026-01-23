@@ -287,6 +287,11 @@ Trên thực tế, phần lớn AI chatbot hiện nay có thể được xếp v
 
 Loại chatbot này phù hợp để giảm tải cho con người, đặc biệt trong các hệ thống hỗ trợ khách hàng.
 
+<p align="center">
+  <img src="images\blog2_so_sanh_quy_trinh.png" style="margin: 0 auto; display: block;"><br/>
+  <em>Hình 1.1. So sánh quy trình "Phát triển mô hình AI từ đầu" và "Xây dựng chatbot sử dụng AI API"</em>
+</p>
+
 **Task-oriented Bot – Chatbot thực hiện tác vụ**
 Khác với FAQ Bot, loại chatbot này không chỉ trả lời mà còn **dẫn người dùng qua một quy trình**.
 
